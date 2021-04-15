@@ -12,7 +12,7 @@ namespace LibraryApp.Models.Context
         public DbSet<Purchase> Purchases { get; set; }
     }
 
-    public class BookDbInitializer : DropCreateDatabaseAlways<BookContext>
+    public class BookDbInitializer : DropCreateDatabaseAlways<BookContext>  //инициализатор базы данных
     {
         protected override void Seed(BookContext db)
         {

@@ -1,0 +1,23 @@
+﻿body {
+    font-family: Verdana, Arial, Helvetica, Sans-Serif;
+    background-color: lightgray;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    display:inline;
+}
+
+button {
+    background-color: lightblue;
+    border: 2px white solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+}

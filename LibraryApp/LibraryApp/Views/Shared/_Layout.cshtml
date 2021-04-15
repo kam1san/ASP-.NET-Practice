@@ -3,15 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/main.css")" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <nav>
-    <ul class="menu">
-        <li>@Html.ActionLink("Главная", "Index", "Home")</li>
-    </ul>
-    </nav>
+    <div style="width: 100%;">
+        <ul>
+            <li>
+                <button>@Html.ActionLink("Главная", "Index", "Home")</button>
+            </li>
+        </ul>
+    </div>
+    <div style="background-color: white; padding: 20px; width: 90%; margin: auto; border-radius: 10px;">
     @RenderBody()
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

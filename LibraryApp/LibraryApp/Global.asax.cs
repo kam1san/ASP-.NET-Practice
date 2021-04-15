@@ -14,7 +14,7 @@ namespace LibraryApp
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new BookDbInitializer());
+            Database.SetInitializer(new BookDbInitializer()); //инициализируем базу данных
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
